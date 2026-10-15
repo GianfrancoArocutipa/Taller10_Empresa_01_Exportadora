@@ -1,0 +1,6 @@
+# Git ignore para artefactos temporales y externos
+_eliminar_antes_de_terminar/
+*.tmp
+~$*
+__pycache__/
+*.pyc
