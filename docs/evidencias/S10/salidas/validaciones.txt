@@ -1,0 +1,27 @@
+=== COMPROBACIONES DE VALIDACIÓN METODOLÓGICA (PASO F) ===
+Caso: Agroexportadora Valle Viejo S.A.C.
+Fecha: 2026-10-15
+Evaluador: Gianfranco Arocutipa Arocutipa (2023076790)
+
+1. Comprobación de Pertenencia de Capas en ArchiMate 3.2:
+   - Estado: CONFORME.
+   - Verificación: Se auditaron todos los elementos modelados. 
+     * En Capa de Negocio se ubicaron exclusivamente Actores (Productor, Operario de balanza, Responsable de calidad), Roles (Pesador, Liquidador), Procesos (Recepción, Envasado, Control de Calidad, Exportación, Compras, Riego) y Servicios de Negocio (Acopio 24h, Certificación fitosanitaria).
+     * En Capa de Aplicación se modelaron los sistemas formales (ERP, Access 2014, Balanza, Riego web, SaaS planillas) y de manera explícita las 3 hojas de cálculo operativas (Trazabilidad, Costo/Tn, Programación de riego), asignadas con relaciones de 'Serving' hacia los procesos de negocio.
+     * En Capa de Tecnología se aislaron los Nodos físicos (Servidor ERP, PC Balanza, PC Planta, Estaciones), Redes (LAN plana, Enlace inalámbrico direccional) y Servicios de plataforma (DBMS relacional, Motor Access ACE, Almacenamiento local).
+
+2. Comprobación de Existencia Real de Aplicaciones:
+   - Estado: CONFORME.
+   - Verificación: Se cruzó el inventario del modelo contra el documento oficial 'arquitectura-actual.md' y la 'FICHA.md'.
+     * No se incluyeron aplicaciones teóricas o supuestas en el modelo actual. Las 8 aplicaciones del modelo As-Is (5 sistemas + 3 libros de cálculo) corresponden exactamente a lo que opera en La Yarada.
+     * Se confirmó que el Access 2014 carece de soporte desde hace una década y que las hojas de cálculo suplen la falta de integración entre almacén, finanzas y campo.
+
+3. Comprobación de Trazabilidad Bipolar de Brechas (As-Is vs To-Be):
+   - Estado: CONFORME.
+   - Verificación: Las 13 brechas registradas en 'AR03_brechas.csv' tienen contraparte demostrable en ambos modelos:
+     * Lote: De 4 repositorios disjuntos (As-Is) a Maestro de Lotes centralizado en ERP (To-Be).
+     * Balanza: De PC aislada con transcripción en papel (As-Is) a Interfaz programática REST/TCP (To-Be).
+     * Trazabilidad: De Access vulnerable y Excel manual (As-Is) a Módulo MES/Trazabilidad industrial con soporte (To-Be).
+     * Costeo: De libro de Excel en Finanzas (As-Is) a Módulo de Costeo estándar en ERP (To-Be).
+     * Infraestructura: De Servidor único con UPS de 10 min (As-Is) a Cluster redundante con réplica inmutable en nube (To-Be).
+     * Ninguna brecha quedó 'huérfana' sin paquete de trabajo asignado ni paquete de trabajo sin brechas justificativas.

@@ -1,0 +1,48 @@
+=== CONTEO DE BRECHAS POR CAPA Y TIPO ===
+capa        tipo_brecha   
+Aplicación  Modificar         2
+            Nuevo             2
+            Reemplazar        2
+Datos       Consolidar        1
+            Nuevo             1
+            Nuevo + Migrar    1
+Negocio     Nuevo             1
+Tecnología  Modificar         1
+            Nuevo             1
+            Reemplazar        1
+
+Brechas totales identificadas: 13
+Esfuerzo alto: 3 | medio: 6 | bajo: 4
+
+=== PAQUETES DE TRABAJO (insumo del portafolio Sección 7) ===
+
+PT-01 Gobierno y Calidad del Dato Maestro
+   Brechas asignadas: 3 | Esfuerzo máximo: Alto | Dependencias: ninguna
+
+PT-02 Sistema Integrado de Trazabilidad y Producción
+   Brechas asignadas: 3 | Esfuerzo máximo: Alto | Dependencias: Maestro único de lotes, Módulo corporativo de trazabilidad
+
+PT-03 Automatización de Pesaje y Telemetría Industrial
+   Brechas asignadas: 2 | Esfuerzo máximo: Medio | Dependencias: Capa de red y servicios
+
+PT-04 Infraestructura, Respaldo y Continuidad
+   Brechas asignadas: 2 | Esfuerzo máximo: Alto | Dependencias: ninguna
+
+PT-05 Integración Financiera, Costos y Nómina
+   Brechas asignadas: 2 | Esfuerzo máximo: Medio | Dependencias: Maestro único de lotes
+
+PT-06 Gobierno de TI, Políticas y Protección de Datos
+   Brechas asignadas: 1 | Esfuerzo máximo: Bajo | Dependencias: ninguna
+
+=== SECUENCIA OBLIGADA POR DEPENDENCIAS ===
+  Fase 1 (Habilitadores Críticos):
+    • PT-01 Gobierno y Calidad del Dato Maestro (habilita trazabilidad y costeo)
+    • PT-04 Infraestructura, Respaldo y Continuidad (habilita estabilidad y conectividad de planta)
+    • PT-06 Gobierno de TI, Políticas y Protección de Datos (independiente, esfuerzo bajo)
+  Fase 2 (Soluciones Core y Automatización):
+    • PT-02 Sistema Integrado de Trazabilidad y Producción (depende de PT-01 y PT-04)
+    • PT-03 Automatización de Pesaje y Telemetría Industrial (depende de conectividad de PT-04)
+  Fase 3 (Optimización y Consolidación Financiera):
+    • PT-05 Integración Financiera, Costos y Nómina (depende de lotes de PT-01 y producción de PT-02)
+
+→ Esta secuencia condiciona estrictamente la hoja de ruta de la Sección 7.3 del PETI.

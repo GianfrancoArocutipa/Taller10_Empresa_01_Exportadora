@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='utf-8'?>
+<archimate:model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:archimate="http://www.archimatetool.com/archimate" name="Agroexportadora Valle Viejo - Arquitectura Empresarial S10" id="id-model-valle-viejo-s10" version="3.2">
+  <folder name="Business" id="folder-business" type="business">
+    <element xsi:type="archimate:BusinessActor" id="id-actor-01" name="Productor Asociado" />
+    <element xsi:type="archimate:BusinessActor" id="id-actor-02" name="Operario de Balanza y Recepción" />
+    <element xsi:type="archimate:BusinessActor" id="id-actor-03" name="Jefe de Planta y Producción" />
+    <element xsi:type="archimate:BusinessActor" id="id-actor-04" name="Responsable de Calidad y Trazabilidad" />
+    <element xsi:type="archimate:BusinessProcess" id="id-proc-01" name="Recepción y pesaje de materia prima" />
+    <element xsi:type="archimate:BusinessProcess" id="id-proc-02" name="Proceso y envasado de aceituna y aceite" />
+    <element xsi:type="archimate:BusinessProcess" id="id-proc-03" name="Control de calidad y trazabilidad de lote" />
+    <element xsi:type="archimate:BusinessProcess" id="id-proc-04" name="Exportación y documentación aduanera" />
+    <element xsi:type="archimate:BusinessProcess" id="id-proc-05" name="Compras a productores asociados" />
+    <element xsi:type="archimate:BusinessProcess" id="id-proc-06" name="Gestión de riego y campo" />
+    <element xsi:type="archimate:BusinessService" id="id-bsrv-01" name="Acopio de aceituna en 24h" />
+    <element xsi:type="archimate:BusinessService" id="id-bsrv-02" name="Certificación y trazabilidad fitosanitaria SENASA" />
+    <element xsi:type="archimate:BusinessObject" id="id-bobj-01" name="Lote de Producción" />
+    <element xsi:type="archimate:BusinessObject" id="id-bobj-02" name="Pesada de Materia Prima" />
+    <element xsi:type="archimate:BusinessObject" id="id-bobj-03" name="Padrón de Productores" />
+  </folder>
+  <folder name="Application" id="folder-application" type="application">
+    <element xsi:type="archimate:ApplicationComponent" id="id-app-01" name="ERP Comercial (Compras, Ventas, Almacén, Contabilidad)" />
+    <element xsi:type="archimate:ApplicationComponent" id="id-app-02" name="Trazabilidad de Lotes (MS Access 2014 - Sin soporte)" />
+    <element xsi:type="archimate:ApplicationComponent" id="id-app-03" name="Software Balanza de Ingreso (Local propietario)" />
+    <element xsi:type="archimate:ApplicationComponent" id="id-app-04" name="Consola Web Riego Tecnificado (SaaS nube cerrada)" />
+    <element xsi:type="archimate:ApplicationComponent" id="id-app-05" name="Sistema de Planillas (SaaS externo por Excel)" />
+    <element xsi:type="archimate:ApplicationComponent" id="id-app-06" name="Hoja de cálculo · Trazabilidad por lote (Excel campaña)" />
+    <element xsi:type="archimate:ApplicationComponent" id="id-app-07" name="Hoja de cálculo · Costo por tonelada (Excel finanzas)" />
+    <element xsi:type="archimate:ApplicationComponent" id="id-app-08" name="Hoja de cálculo · Programación de riego (Excel campo)" />
+    <element xsi:type="archimate:ApplicationService" id="id-asrv-01" name="Registro y cálculo de pesaje" />
+    <element xsi:type="archimate:ApplicationService" id="id-asrv-02" name="Generación manual de código de lote" />
+    <element xsi:type="archimate:DataObject" id="id-dobj-01" name="Registro maestro de lote" />
+    <element xsi:type="archimate:DataObject" id="id-dobj-02" name="Maestro de proveedores agrícolas" />
+  </folder>
+  <folder name="Technology" id="folder-technology" type="technology">
+    <element xsi:type="archimate:Node" id="id-node-01" name="Servidor Único ERP (Oficina La Yarada - UPS 10 min)" />
+    <element xsi:type="archimate:Node" id="id-node-02" name="PC Balanza (Ambiente industrial, sin red)" />
+    <element xsi:type="archimate:Node" id="id-node-03" name="PC Planta (Access 2014, sin backup)" />
+    <element xsi:type="archimate:Node" id="id-node-04" name="Estaciones de Trabajo (38 PCs oficina)" />
+    <element xsi:type="archimate:CommunicationNetwork" id="id-net-01" name="Red LAN Plana de Oficina (Sin VLANs)" />
+    <element xsi:type="archimate:CommunicationNetwork" id="id-net-02" name="Enlace Inalámbrico Punto a Punto Oficina-Planta" />
+    <element xsi:type="archimate:TechnologyService" id="id-tsrv-01" name="Base de Datos Relacional ERP (On-premise)" />
+    <element xsi:type="archimate:TechnologyService" id="id-tsrv-02" name="Almacenamiento Local en Disco (Sin RAID verificado)" />
+  </folder>
+  <folder name="Strategy &amp; Motivation" id="folder-motivation" type="strategy">
+    <element xsi:type="archimate:Principle" id="id-prn-01" name="P1: Dato único con dueño (MDM)" />
+    <element xsi:type="archimate:Principle" id="id-prn-02" name="P2: Trazabilidad integral Field-to-Fork" />
+    <element xsi:type="archimate:Principle" id="id-prn-03" name="P3: Integración por servicios" />
+    <element xsi:type="archimate:Principle" id="id-prn-04" name="P4: Respaldo inmutable y continuidad" />
+    <element xsi:type="archimate:WorkPackage" id="id-wp-01" name="PT-01 Gobierno y Calidad del Dato Maestro" />
+    <element xsi:type="archimate:WorkPackage" id="id-wp-02" name="PT-02 Sistema Integrado de Trazabilidad (MES)" />
+    <element xsi:type="archimate:WorkPackage" id="id-wp-03" name="PT-03 Automatización de Pesaje y Telemetría" />
+    <element xsi:type="archimate:WorkPackage" id="id-wp-04" name="PT-04 Infraestructura, Respaldo y Continuidad" />
+  </folder>
+</archimate:model>

@@ -1,0 +1,8 @@
+Entidad,Sistemas donde reside,N registros por sistema,Fuente autoritativa,Dueño del dato (cargo),Discrepancia observada,Clasificación,Contiene datos personales
+Lote,"Trazabilidad Access, ERP Almacén, Balanza, Libro exportación Excel","2300 / 410 / 9800 / 22",Ninguna,Ninguno,Kilos por lote difieren hasta 6% entre sistemas,Interna,No
+Productor asociado,"ERP Proveedores, Libro de campo Excel, Contratos papel","71 / 210 / 180",ERP (incompleta),Jefe de Compras,32 productores del campo no existen en ERP,Confidencial,Sí
+Trabajador,"SaaS Planillas, Usuarios ERP, Asistencia en papel","142 / 97 / 520 en campaña",SaaS Planillas,Administración y Finanzas,520 eventuales de campaña no registrados en sistemas,Restringida,Sí (sensibles)
+Cliente internacional,"ERP Ventas, Casilla correo compartida, Documentos aduana","14 / No cuantificado / 22",ERP Ventas,Gerencia General,Condiciones comerciales y acuerdos residen en correos,Confidencial,Sí (contacto)
+Pesaje de materia prima,"Software Balanza PC, Hojas pesaje papel, ERP Compras","9800 / 9800 / 9150",Ninguna,Ninguno,650 pesajes de balanza sin transcripción oportuna al ERP,Interna,No
+Costo por tonelada,"Libro Finanzas Excel, ERP Contabilidad, Cuaderno planta","1 libro anual / Cuentas contables / Notas",Ninguna,Ninguno,Mermas y costos indirectos en Excel no concilian con ERP,Confidencial,No
+Programación de riego,"Consola web fertirriego, Libro de campo Excel","48 sectores / 1 libro mensual",Ninguna,Ninguno,Volumen de agua y fertilizante aplicado difiere del sistema web,Interna,No

@@ -1,0 +1,14 @@
+capa,actual,objetivo,tipo_brecha,esfuerzo,dependencias,origen
+Datos,Lote disperso en 4 sistemas sin dueño,Maestro único de lotes con trazabilidad integral,Nuevo + Migrar,Alto,—,Principio 1 · Dato único y Sección 3.1.3
+Datos,32 productores asociados fuera del ERP,Padrón único de productores integrado al ERP,Consolidar,Medio,—,Principio 1 · Sección 3.1.2
+Datos,520 trabajadores eventuales sin registro formal,Registro automatizado y cumplimiento Ley 29733,Nuevo,Bajo,—,Principio 5 · Obligación normativa
+Aplicación,Access de trazabilidad sin soporte (2014),Módulo corporativo de trazabilidad en ERP/MES,Reemplazar,Alto,Maestro único de lotes,Principio 6 · Incidente campaña 2024
+Aplicación,Balanza en PC aislada con transcripción manual,Integración automática balanza-ERP por servicio,Nuevo,Medio,Capa de red y servicios,Principio 3 · Cero digitación duplicada
+Aplicación,Trazabilidad por lote en Excel por campaña,Control de calidad y lotes en línea,Reemplazar,Medio,Módulo corporativo de trazabilidad,Estrategia E-01 · Trazabilidad SENASA
+Aplicación,Cálculo de costo/tonelada en Excel de Finanzas,Costeo estándar automático en ERP contable,Modificar,Medio,Maestro único de lotes,Estrategia E-03 · Control de costos
+Aplicación,Consola de riego aislada sin exportación,Conector de telemetría de campo al ERP,Nuevo,Bajo,Capa de red y servicios,Principio 3 · Eficiencia hídrica
+Aplicación,Integración por libros Excel a planillas,Servicio web seguro con proveedor de nóminas,Modificar,Bajo,—,Principio 5 · Seguridad de datos
+Tecnología,Servidor único en oficina con UPS de 10 min,Infraestructura híbrida con alta disponibilidad,Modificar,Alto,—,Principio 4 · COBIT DSS04
+Tecnología,PC de planta con Access en riesgo físico,Terminales industriales ligeros centralizados,Reemplazar,Medio,Módulo corporativo de trazabilidad,Principio 4 · Incidente campaña 2024
+Tecnología,Red plana y enlace monoproveedor,VLANs segmentadas y enlace redundante,Nuevo,Medio,—,Sección 4.2 · Seguridad de redes
+Negocio,Sin Comité de TI ni políticas aprobadas,Comité de TI formal con sesiones y políticas,Nuevo,Bajo,—,COBIT 2019 EDM01 · Gobierno de TI
