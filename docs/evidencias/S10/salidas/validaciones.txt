@@ -1,7 +1,10 @@
 === COMPROBACIONES DE VALIDACIÓN METODOLÓGICA (PASO F) ===
 Caso: Agroexportadora Valle Viejo S.A.C.
 Fecha: 2026-10-15
-Evaluador: Gianfranco Arocutipa Arocutipa (2023076790)
+Evaluadores / Equipo:
+- Colque Quispe, Rodrigo Sídney (2023077078)
+- Perez Peralta, Fabrizio Salvador Elias (2023077476)
+- Arocutipa Arocutipa, Gianfranco (2023076790)
 
 1. Comprobación de Pertenencia de Capas en ArchiMate 3.2:
    - Estado: CONFORME.

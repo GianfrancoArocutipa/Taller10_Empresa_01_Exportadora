@@ -1,6 +1,7 @@
 # AR01 · Principios de Arquitectura Empresarial
 ## Organización: Agroexportadora Valle Viejo S.A.C.
 **Documento:** `05_arquitectura/AR01_principios.md`  
+**Equipo de Trabajo:** Colque Quispe, Rodrigo Sídney (2023077078) · Perez Peralta, Fabrizio Salvador Elias (2023077476) · Arocutipa Arocutipa, Gianfranco (2023076790)  
 **Estándar:** TOGAF Standard 10th Edition (Architecture Principles)  
 **Trazabilidad:** Sección 3.1 (Diagnóstico interno), Sección 3.3 (Incidentes y Riesgos) y Sección 4.1 (Cumplimiento normativo) del PETI
 

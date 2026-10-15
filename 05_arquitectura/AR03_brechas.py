@@ -1,3 +1,11 @@
+# ==============================================================================
+# TALLER 10: MODELADO DE LA ARQUITECTURA ACTUAL Y OBJETIVO EN ARCHI
+# Organización: Empresa 01 · Agroexportadora Valle Viejo S.A.C.
+# Equipo de Trabajo:
+# - Colque Quispe, Rodrigo Sídney (2023077078)
+# - Perez Peralta, Fabrizio Salvador Elias (2023077476)
+# - Arocutipa Arocutipa, Gianfranco (2023076790)
+# ==============================================================================
 import sys
 import pandas as pd
 if sys.stdout.encoding != 'utf-8':

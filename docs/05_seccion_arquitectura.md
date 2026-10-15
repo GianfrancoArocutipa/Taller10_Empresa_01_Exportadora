@@ -1,7 +1,10 @@
 # 5. Arquitectura Empresarial
 ## Organización: Agroexportadora Valle Viejo S.A.C.
 **Documento oficial del PETI · Versión v0.10**  
-**Autor:** Gianfranco Arocutipa Arocutipa (Código: 2023076790)  
+**Autores / Equipo de Trabajo:**  
+* Colque Quispe, Rodrigo Sídney (Código: 2023077078)  
+* Perez Peralta, Fabrizio Salvador Elias (Código: 2023077476)  
+* Arocutipa Arocutipa, Gianfranco (Código: 2023076790)  
 **Marco Metodológico:** TOGAF Standard 10th Edition (Fases B, C, D, E y F) · ArchiMate 3.2
 
 ---
